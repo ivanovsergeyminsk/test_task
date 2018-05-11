@@ -44,7 +44,7 @@ var
   I: Integer;
 begin
   SetLength(FArrItems, ACount);
-  for I := 0 to ACount do
+  for I := 0 to ACount - 1 do
   begin
     FRecItem.Code   := CS_CODE[Random(3)];
     FRecItem.Price  := CS_PRICE[Random(3)];
