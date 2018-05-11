@@ -1,0 +1,44 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Test Task Euroopt'
+  ClientHeight = 286
+  ClientWidth = 646
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object MemoResult: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Size.Width = 646.000000000000000000
+    Size.Height = 236.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 642.000000000000000000
+    Viewport.Height = 232.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = Bottom
+    Position.Y = 236.000000000000000000
+    Size.Width = 646.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ButtonShowGrouped: TButton
+      Align = Right
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 508.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 128.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Show Grouped Items'
+      OnClick = ButtonShowGroupedClick
+    end
+  end
+end
