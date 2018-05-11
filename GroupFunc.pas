@@ -1,4 +1,4 @@
-unit GroupFunc;
+п»їunit GroupFunc;
 
 interface
 uses
@@ -7,19 +7,19 @@ uses
 
 
 /// <summary>
-///   Группировка по Code и Price. <br />
+///   Р“СЂСѓРїРїРёСЂРѕРІРєР° РїРѕ Code Рё Price. <br />
 /// </summary>
 /// <param name="AArray">
-///   Исходный массив записей.
+///   РСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ Р·Р°РїРёСЃРµР№.
 /// </param>
 /// <remarks>
 ///   <para>
-///     Использую коллекцию TDictionary c ключем TRecKey&lt;integer,
-///     double&gt;, где integer это Code, a double - это Price.
+///     РСЃРїРѕР»СЊР·СѓСЋ РєРѕР»Р»РµРєС†РёСЋ TDictionary c РєР»СЋС‡РµРј TRecKey&lt;integer,
+///     double&gt;, РіРґРµ integer СЌС‚Рѕ Code, a double - СЌС‚Рѕ Price.
 ///   </para>
 ///   <para>
-///     Использую эту коллекцию потому, что по ключу формируется
-///     hash-таблица.
+///     РСЃРїРѕР»СЊР·СѓСЋ СЌС‚Сѓ РєРѕР»Р»РµРєС†РёСЋ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ РїРѕ РєР»СЋС‡Сѓ С„РѕСЂРјРёСЂСѓРµС‚СЃСЏ
+///     hash-С‚Р°Р±Р»РёС†Р°.
 ///   </para>
 /// </remarks>
 function Group(const AArray: TArrItems): TDictionary<TRecKey, TRecItem>;
@@ -28,15 +28,15 @@ implementation
 
 function Group(const AArray: TArrItems): TDictionary<TRecKey, TRecItem>;
 var
-  FItem: TRecItem;    //запись из исходного массива
-  FRecItem: TRecItem; //Запись из словаря
+  FItem: TRecItem;    //Р·Р°РїРёСЃСЊ РёР· РёСЃС…РѕРґРЅРѕРіРѕ РјР°СЃСЃРёРІР°
+  FRecItem: TRecItem; //Р—Р°РїРёСЃСЊ РёР· СЃР»РѕРІР°СЂСЏ
   FKey: TRecKey;
   FGroupedItems: TDictionary<TRecKey, TRecItem>;
 begin
   FGroupedItems := TDictionary<TRecKey, TRecItem>.Create;
   {
-    Для большей оптимизации, думаю можно распараллелить цикл,
-    используя, например, библиотеку OmniThreadLibrary.
+    Р”Р»СЏ Р±РѕР»СЊС€РµР№ РѕРїС‚РёРјРёР·Р°С†РёРё, РґСѓРјР°СЋ РјРѕР¶РЅРѕ СЂР°СЃРїР°СЂР°Р»Р»РµР»РёС‚СЊ С†РёРєР»,
+    РёСЃРїРѕР»СЊР·СѓСЏ, РЅР°РїСЂРёРјРµСЂ, Р±РёР±Р»РёРѕС‚РµРєСѓ OmniThreadLibrary.
   }
   for FItem in AArray do
   begin

@@ -1,4 +1,4 @@
-unit items;
+п»їunit items;
 
 interface
 
@@ -23,15 +23,15 @@ const
                                      (Code: 7; Price: 1.50; Count: 2),
                                      (Code: 5; Price:  2.7; Count: 3));
 
-  //Для генерации записей
+  //Р”Р»СЏ РіРµРЅРµСЂР°С†РёРё Р·Р°РїРёСЃРµР№
   CS_CODE:  array[0..2] of Integer = (7, 5, 3);
   CS_PRICE: array[0..3] of Double = (1.10, 2.7, 1.50, 4.4);
 
   /// <summary>
-  ///   Сгенерировать массив записей.
+  ///   РЎРіРµРЅРµСЂРёСЂРѕРІР°С‚СЊ РјР°СЃСЃРёРІ Р·Р°РїРёСЃРµР№.
   /// </summary>
   /// <param name="ACount">
-  ///   Количество записей.
+  ///   РљРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°РїРёСЃРµР№.
   /// </param>
   function GenerateItems(ACount: integer): TArrItems;
 

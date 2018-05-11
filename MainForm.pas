@@ -1,4 +1,4 @@
-unit MainForm;
+п»їunit MainForm;
 
 interface
 
@@ -57,7 +57,7 @@ begin
   FGroupedItems := Group(FSourceArray);
 
   TickEnd := GetTickCount;
-  TickResult := TickEnd - TickBegin; //Время, затраченное на выполнение группировки (ms).
+  TickResult := TickEnd - TickBegin; //Р’СЂРµРјСЏ, Р·Р°С‚СЂР°С‡РµРЅРЅРѕРµ РЅР° РІС‹РїРѕР»РЅРµРЅРёРµ РіСЂСѓРїРїРёСЂРѕРІРєРё (ms).
 
   Self.ShowGrouped(FGroupedItems,
                    TickResult);
